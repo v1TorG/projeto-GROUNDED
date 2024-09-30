@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Patua+One&display=swap');
+  /*font-family: "Patua One", serif;
+    ou
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Patua+One&family=Protest+Guerrilla&display=swap');
+/*font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Patua+One&family=Protest+Guerrilla&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/*.inria-sans-light {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}*/
+
+body{
+    background-image: linear-gradient(to bottom, #fffffff8, #8cd80a, #107C10 );
+    font-family: var(--fonte-padrao);
+}
+
+:root{
+    --cor01: rgb(255, 255, 255);
+    --cor02: #8cd80a;
+    --cor03: #107C10;
+    --cor04: #053611;
+    --cor05: rgb(0, 10, 0);
+
+    --fonte-padrao: Arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: "Archivo Black", sans-serif;
+    --fonte-tema: "Protest Guerrilla", sans-serif;
+    --font-normal:"Inria Sans", sans-serif;
+}
+
+h1{
+    font-family: var(--fonte-tema);
+    letter-spacing: 1.5px;
+    font-weight: 300;
+}
+
+h2{
+    font-family: var(--fonte-tema);
+    text-shadow: 1px 1px #1b801be5;
+    color: var(--cor04);
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    text-shadow: 2px 2px #0536112d;
+}
+h3{
+    font-family: var(--fonte-destaque);
+    text-shadow: 1px 1px #107c1054;
+    color: var(--cor04);
+    margin-bottom: 30px;
+    background-image: linear-gradient(to right, #8cd80a, #b5f050, transparent );
+    border-radius: 5px;
+}
+h4{
+    font-family: var(--fonte-destaque);
+    text-shadow: 1px 1px #107c1054;
+    color: var(--cor05);
+    
+}
+
+p{
+    font-family: var(--font-normal);
+    color: black;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.336);
+    margin-bottom: 30px;
+    font-size: 1em;
+}
+
+strong{
+    color: #053611;   
+}
+strong:hover{
+    color: #8cd80a;
+    text-decoration: underline;
+
+}
+   
+header{
+    text-align: center;
+
+}
+header > video{
+    box-shadow: var(--cor01);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+    
+img{
+    box-shadow: 5px 5px 10px 1px rgba(1, 22, 6, 0.541);
+    width: 100%;
+    margin-bottom: 30px;
+}
+nav{
+    background-color: var(--cor03);  
+    text-align: center;   
+    padding: 10px;
+    margin: 0px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: inset  2px 2px 19px 2px var(--cor02);
+}
+nav > a{
+    color:var(--cor01);
+    font-family: var(--fonte-tema);
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-left: 60px;   
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+nav > a:hover{
+    padding: 10px;
+    background-color: var(--cor02);
+    color: var(--cor04);
+}
+/*  tamnho minimo e maximo em q a box pode crescer e diminuir
+    min-width: 250px;
+    max-width: 1000px;
+    */
+main{
+    color: var(--cor01);
+    text-align: center;
+    min-width: 250px;
+    max-width: 1000px;
+    margin: auto;
+}
+main a{
+    text-decoration: none;
+}
+.videoHEADER{
+    width: 100%;
+    margin-bottom: 0px;
+}
+video{
+    box-shadow: 5px 3px 10px 1px rgba(1, 22, 6, 0.541);
+    width: 100%;
+    margin-bottom: 20px;
+}
+/*iframe{
+    box-shadow: 5px 3px 10px 1px rgba(1, 22, 6, 0.541);
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+*/
+div.videoyoutuber{
+    background-color: #156e2c;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+div.videoyoutuber>iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+article{
+    background-color: var(--cor01);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 80px 0px var(--cor05);
+}
+
+footer{
+    color: #dcff9af6;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    text-shadow: 1px 1px var(--cor03);
+}
+footer>h2{
+    text-shadow: none;
+    color: var(--cor05) ;
+    padding: 10px;
+}
+footer>a{
+   box-shadow: none;
+   color: var(--cor05);
+}
+a>img {
+    max-width:120px;
+    max-height:60px;
+    width: auto;
+    height: auto;
+    box-shadow: none;
+    padding: 10px;
+}
