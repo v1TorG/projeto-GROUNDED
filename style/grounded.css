@@ -64,6 +64,7 @@ img{
     box-shadow: 5px 3px 7px 1px rgba(1, 22, 6, 0.541);
     width: 100%;
 }
+
 nav{
     background-color: var(--cor02);  
     text-align: center;   
