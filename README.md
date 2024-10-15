@@ -1,2 +1,2 @@
 # site-GROUNDED
- primeiro site desenvolvido - apenas teste
+ primeiro site desenvolvido com HTML e CSS
